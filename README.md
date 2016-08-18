@@ -34,12 +34,12 @@ If you find this forum or the ESP8266 Boards Manager package useful, please cons
 ##### Stable version ![](http://arduino.esp8266.com/stable/badge.svg)
 Boards manager link: `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
 
-Documentation: [http://esp8266.github.io/Arduino/versions/2.1.0/](http://esp8266.github.io/Arduino/versions/2.1.0/)
+Documentation: [http://esp8266.github.io/Arduino/versions/2.3.0/](http://esp8266.github.io/Arduino/versions/2.3.0/)
 
 ##### Staging version ![](http://arduino.esp8266.com/staging/badge.svg)
 Boards manager link: `http://arduino.esp8266.com/staging/package_esp8266com_index.json`
 
-Documentation: [http://esp8266.github.io/Arduino/versions/2.1.0-rc2/](http://esp8266.github.io/Arduino/versions/2.1.0-rc2/)
+Documentation: [http://esp8266.github.io/Arduino/versions/2.3.0-rc2/](http://esp8266.github.io/Arduino/versions/2.3.0-rc2/)
 
 ### Using git version
 [![Linux build status](https://travis-ci.org/esp8266/Arduino.svg)](https://travis-ci.org/esp8266/Arduino) [![codecov.io](https://codecov.io/github/esp8266/Arduino/coverage.svg?branch=master)](https://codecov.io/github/esp8266/Arduino?branch=master)
@@ -67,20 +67,19 @@ development with cross platform build system, library manager and full support
 for Espressif (ESP8266) development. It works on the popular host OS: Mac OS X, Windows,
 Linux 32/64, Linux ARM (like Raspberry Pi, BeagleBone, CubieBoard).
 
-- [What is PlatformIO?](http://docs.platformio.org/en/latest/what-is-platformio.html)
-- [PlatformIO IDE](http://platformio.org/#!/platformio-ide)
-- Quick Start with [PlatformIO IDE](http://docs.platformio.org/en/latest/ide/atom.html#quick-start) or [PlatformIO CLI](http://docs.platformio.org/en/latest/quickstart.html)
-- [Advanced using](http://docs.platformio.org/en/latest/platforms/espressif.html) -
+- [What is PlatformIO?](http://docs.platformio.org/en/stable/what-is-platformio.html)
+- [PlatformIO IDE](http://platformio.org/platformio-ide)
+- Quick Start with [PlatformIO IDE](http://docs.platformio.org/en/stable/ide/atom.html#quick-start) or [PlatformIO CLI](http://docs.platformio.org/en/stable/quickstart.html)
+- [Advanced using](http://docs.platformio.org/en/stable/platforms/espressif.html) -
   custom settings, uploading to SPIFFS, Over-the-Air (OTA) or using stage version
-- [Integration with other IDE](http://docs.platformio.org/en/latest/ide.html) -
+- [Integration with other IDE](http://docs.platformio.org/en/stable/ide.html) -
   Atom, CLion, Eclipse, Emacs, NetBeans, Qt Creator, Sublime Text, VIM and Visual Studio
-- [Project Examples](http://docs.platformio.org/en/latest/platforms/espressif.html#examples)
+- [Project Examples](http://docs.platformio.org/en/stable/platforms/espressif.html#examples)
 
 ### Building with make
 
 [makeEspArduino](https://github.com/plerup/makeEspArduino) is a generic makefile for any ESP8266 Arduino project.
 Using make instead of the Arduino IDE makes it easier to do automated and production builds.
-
 
 ### Documentation
 
@@ -91,6 +90,7 @@ Documentation for latest development version:
 - [File system](doc/filesystem.md)
 - [OTA update](doc/ota_updates/readme.md)
 - [Supported boards](doc/boards.md)
+- [FAQ / Trubleshooting](doc/faq/readme.md)
 - [Change log](doc/changes.md)
 
 ### Issues and support ###

@@ -63,9 +63,7 @@ public:
   ~MDNSResponder();
   bool begin(const char* hostName);
   //for compatibility
-  bool begin(const char* hostName, IPAddress ip, uint32_t ttl=120){
-    return begin(hostName);
-  }
+  bool begin(const char* hostName, IPAddress ip, uint32_t ttl=120);
   void update();
 
   void addService(char *service, char *proto, uint16_t port);
@@ -114,8 +112,11 @@ private:
   struct MDNSQuery * _query;
   bool _newQuery;
   bool _waitingForAnswers;
-  
+  WiFiEventHandler _disconnectedHandler;
+  WiFiEventHandler _gotIPHandler;
+  uint32_t _ip;
 
+  bool _begin(const char* hostName, uint32_t ip, uint32_t ttl);
   uint32_t _getOurIp();
   uint16_t _getServicePort(char *service, char *proto);
   MDNSTxt * _getServiceTxt(char *name, char *proto);
@@ -125,8 +126,12 @@ private:
   size_t advertiseServices(); // advertise all hosted services
   MDNSAnswer* _getAnswerFromIdx(int idx);
   int _getNumAnswers();
+  bool _listen();
+  void _restart();
 };
 
+#if !defined(NO_GLOBAL_INSTANCES) && !defined(NO_GLOBAL_MDNS)
 extern MDNSResponder MDNS;
+#endif
 
 #endif //ESP8266MDNS_H
